@@ -4,14 +4,15 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
 
 body {
-    background-color: #000;
-    max-width: 1200px;
+    background-color: #000000;
+    max-width: 1200vh;
     margin: 0 auto;
 
 }
@@ -33,7 +34,7 @@ header h1 {
 }
 
 header span {
-    color: #fff;
+    color: #ffffff;
 }
 
 section .img-perfil{
@@ -45,6 +46,15 @@ margin-left: 10rem;
     border-radius: 100%;
 }
 
+section .img-perfil:hover{
+
+
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #dc3545,
+                0 0 50px #dc3545;                      
+}
 
 header .navegacao-primaria {
     display: flex;
@@ -451,7 +461,7 @@ main .sobre {
 /* SOBRE MINHAS EXPERIÊNCIAS */
 
 .my_resume {
-    color: #f7f7f7;
+    color: #000000;
 }
 
 .resume_gerenico {
@@ -864,6 +874,7 @@ footer {
     flex-wrap: wrap;
     position: relative;
     align-items: center;
+    
 }
 
 .footer_sociais li {
@@ -876,7 +887,11 @@ footer {
     padding: 30px;
     font-size: 1.5rem;
     color: 363636;
+    width: 100%;
+    height: auto;
 }
+
+
 
 .footer_sociais li:hover {
     transition: .3s ease-in-out;
